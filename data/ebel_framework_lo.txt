@@ -1,0 +1,451 @@
+# LO_descriptions
+LO1: Analyze Food Systems Using a Transdisciplinary Approach Guided by Sustainability Principles
+Students learn to apply systems thinking to food systems—considering the complex interactions from production to waste—through a holistic and pluralistic lens. This means recognizing interconnected social, ecological, cultural, and health dimensions and valuing diverse perspectives, especially from those impacted by food systems. The approach is transdisciplinary, integrating knowledge from across and beyond academic disciplines. The goal is to develop rich, multi-voiced, often visual representations (like rich pictures or concept maps) that reflect the complexity, dynamics, and sustainability challenges of real-world food systems.
+LO2: Critically Reflect on Interactions Between Worldviews and Power Relations in Food Systems, Recognizing One’s Positionality and Learning Processes
+Students develop critical reflection as a core skill to navigate the complexity of food systems by questioning assumptions, examining how knowledge is shaped by personal and cultural perspectives, and recognizing power dynamics. This outcome emphasizes understanding one’s positionality and how learning is socially constructed. It prepares students to engage with diverse viewpoints, unpack systemic inequalities, and make informed, ethical decisions. Through reflective writing, dialogue, and community-based learning, students build the mindset needed to address complex and often contentious sustainability challenges.
+LO 3: Apply Appropriate Methodologies Considering Diverse Ways of Knowing
+Students are expected to choose and apply research methods that incorporate multiple ways of knowing—academic and non-academic, including Indigenous, cultural, and community-based knowledge systems. This outcome emphasizes inclusive, evidence-based inquiry that respects diverse epistemologies. Methods may include experiments, interviews, storytelling, and ceremonies. The goal is to create well-rounded, decolonizing food system solutions, while reflecting on positionality and biases.
+
+LO 4: Demonstrate Practical Skills in the Food System Based on Sustainability Principles
+This outcome emphasizes hands-on learning to develop skills across the food system—from farming and culinary arts to research, policy, and communication. Students engage in experiential learning to understand food system logistics and apply sustainability principles in real-life scenarios. Activities like farming, internships, and problem-based learning help students build, apply, and evaluate these skills effectively.
+
+LO 5: Communicate Effectively in Oral, Written, and Visual Formats Across Multiple Contexts
+Students must be able to express complex ideas clearly and persuasively across diverse audiences and formats. Effective communication includes cross-cultural competence, adaptability, and storytelling, using oral, written, and visual tools. SFS programs emphasize communication as a key to leadership, knowledge sharing, and collaborative problem-solving, with activities like reflective writing, participatory writing, and presentations.
+
+LO 6: Collaborate and Demonstrate Leadership Skills and Professionalism as Inclusive Members of Diverse Teams
+This outcome focuses on developing students’ ability to lead, facilitate, and contribute meaningfully in diverse teams. Collaboration is central to solving food system challenges and requires communication, professionalism, and mutual respect. Curriculum includes team-based projects, internships, and interactive techniques that promote collective action and inclusivity.
+
+LO 7: Co-design, Implement, and Assess Food System Solutions Across Scales
+Building on earlier LOs, this outcome involves using systems thinking to develop, apply, and evaluate sustainability solutions in real-world contexts. Students must co-design projects with stakeholders, communicate across disciplines, and assess outcomes using appropriate tools. Activities often include participatory research, service learning, and capstone projects aimed at addressing complex, multi-scale food system issues collaboratively.
+LO 1: Systems Thinking
+
+# Keywords
+systems thinking
+
+
+interconnections
+
+
+feedback loops
+
+
+leverage points
+
+
+resilience
+
+
+complexity
+
+
+holistic
+
+
+multi-scalar / multi-level
+
+
+socio-ecological systems
+
+
+cause and effect
+
+
+dynamic relationships
+
+
+
+LO 2: Equity & Justice
+Keywords:
+food justice
+
+
+equity / inequity
+
+
+inclusion
+
+
+Indigenous perspectives / rights
+
+
+decolonization
+
+
+racial, gender, or economic justice
+
+
+marginalized / underrepresented communities
+
+
+structural violence / systemic oppression
+
+
+power and privilege
+
+
+critical race theory
+
+
+sovereignty (e.g., food sovereignty)
+
+
+
+LO 3: Diverse Methodologies
+Keywords:
+mixed methods
+
+
+participatory research
+
+
+Indigenous research methods
+
+
+experiential knowledge
+
+
+qualitative & quantitative
+
+
+ethnography
+
+
+community-based research
+
+
+reflexivity
+
+
+decolonizing methodologies
+
+
+storytelling as method
+
+
+transdisciplinary approaches
+
+
+
+LO 4: Practical Skills
+Keywords:
+hands-on
+
+
+experiential learning
+
+
+fieldwork
+
+
+labs
+
+
+technical training
+
+
+internships
+
+
+skill-building
+
+
+food production / culinary
+
+
+applied work
+
+
+project-based learning
+
+
+real-world context
+
+
+
+LO 5: Effective Communication
+Keywords:
+writing-intensive
+
+
+oral presentations
+
+
+public speaking
+
+
+visual communication
+
+
+media / journalism
+
+
+storytelling
+
+
+communication strategies
+
+
+science communication
+
+
+audience engagement
+
+
+infographics
+
+
+cross-cultural communication
+
+
+
+LO 6: Collaboration & Leadership
+Keywords:
+teamwork
+
+
+group projects
+
+
+leadership development
+
+
+professional skills
+
+
+community engagement
+
+
+networking
+
+
+conflict resolution
+
+
+facilitation
+
+
+interdisciplinary collaboration
+
+
+stakeholder engagement
+
+
+
+LO 7: Systems-Based Solutions
+Keywords:
+capstone
+
+
+problem-solving
+
+
+applied projects
+
+
+design thinking
+
+
+sustainability solutions
+
+
+project implementation
+
+
+real-world problems
+
+
+evaluation / assessment
+
+
+community-based solutions
+
+
+innovation
+
+
+
+LO 8: Food Systems Advocacy
+Keywords:
+advocacy
+
+
+policy
+
+
+civic engagement
+
+
+campaigning
+
+
+activism
+
+
+political systems
+
+
+stakeholder influence
+
+
+lobbying
+
+
+social movements
+
+
+ethics of change
+
+
+leadership in change-making
+
+# LO Courses
+
+LO 1: Systems Thinking
+Courses likely to fit under this learning outcome:
+Introduction to Systems Thinking
+ Focuses on the fundamentals of systems theory, including feedback loops, complexity, and interconnections in socio-ecological systems.
+
+
+Ecology and Environmental Systems
+ Examines ecosystems, human-environment interactions, and how food systems fit into larger environmental contexts.
+
+
+Sustainable Agriculture and Food Systems
+ Looks at how agricultural systems interact with the environment and how sustainable practices can be applied using a systems-thinking approach.
+
+
+Climate Change and Food Security
+ A course that explores the complexities of climate change impacts on food systems, considering feedback loops and system dynamics.
+
+
+
+LO 2: Equity & Justice
+Courses likely to fit under this learning outcome:
+Food Justice and Inequality
+ Focuses on the social, political, and economic dimensions of food systems, particularly the inequities that marginalized communities face.
+
+
+Race, Class, and Food Systems
+ Analyzes how race, class, and food systems intersect, with a focus on systemic oppression and food sovereignty.
+
+
+Global Food Politics
+ Studies the role of political systems in shaping food policies, with attention to equity, justice, and power dynamics in food systems.
+
+
+Decolonizing Food Systems
+ Examines Indigenous food systems and the impacts of colonialism on food sovereignty and food justice.
+
+
+
+LO 3: Diverse Methodologies
+Courses likely to fit under this learning outcome:
+Research Methods in Food Systems
+ Covers both qualitative and quantitative research methods and how they can be applied to food system studies.
+
+
+Participatory Action Research
+ Focuses on community-based research methods, particularly those that engage marginalized communities in food systems research.
+
+
+Indigenous Research Methodologies
+ Explores Indigenous ways of knowing and conducting research, particularly around food systems and sustainability.
+
+
+Ethnography and Food Culture
+ A course that emphasizes ethnographic research methods to study food practices and cultures from a social science perspective.
+
+
+
+LO 4: Practical Skills
+Courses likely to fit under this learning outcome:
+Urban Agriculture and Food Production
+ Provides hands-on experience in growing food in urban environments, equipping students with practical agricultural skills.
+
+
+Food Systems Design and Innovation
+ Focuses on developing practical, innovative solutions for sustainable food systems, including farm-to-table models, food waste reduction, and local sourcing.
+
+
+Sustainable Farming Practices
+ A hands-on course that teaches sustainable agricultural practices, such as organic farming, permaculture, and agroecology.
+
+
+Food Policy and Advocacy
+ Involves practical application of advocacy skills, with students learning how to navigate food policy processes.
+
+
+
+LO 5: Effective Communication
+Courses likely to fit under this learning outcome:
+Scientific Writing in Food Systems
+ Focuses on writing for food systems-related research, including technical reports and policy briefs.
+
+
+Public Speaking and Communication
+ Develops students' skills in presenting complex food systems topics to diverse audiences.
+
+
+Media and Food Systems
+ Explores how media shapes perceptions of food systems and how to effectively communicate food systems issues through various media platforms.
+
+
+Visual Storytelling for Food Systems
+ Focuses on the use of graphics, infographics, and multimedia to communicate food-related issues effectively.
+
+
+
+LO 6: Collaboration & Leadership
+Courses likely to fit under this learning outcome:
+Leadership in Sustainable Development
+ Focuses on developing leadership skills in the context of sustainable development, with an emphasis on food systems.
+
+
+Collaborative Food Systems Solutions
+ A course designed to teach students how to work collaboratively with diverse stakeholders to solve complex food system issues.
+
+
+Conflict Resolution and Mediation in Food Policy
+ Provides skills in resolving conflicts within food policy discussions, often involving stakeholders with different interests.
+
+
+Community Engagement and Mobilization
+ Focuses on how to lead and work within community-based food movements, including stakeholder engagement and coalition building.
+
+
+
+LO 7: Systems-Based Solutions
+Courses likely to fit under this learning outcome:
+Food Systems Problem-Solving
+ An applied course that focuses on identifying food system problems and creating solutions, often through case studies or capstone projects.
+
+
+Design Thinking for Food Systems
+ A course that teaches creative problem-solving methods (design thinking) to address complex food system challenges.
+
+
+Sustainability and Innovation in Food Systems
+ Focuses on creating innovative solutions to food system challenges, such as sustainable food production or reducing food waste.
+
+
+Evaluation of Food Systems Interventions
+ Teaches students how to assess and evaluate the effectiveness of food systems projects and interventions.
+
+
+
+LO 8: Food Systems Advocacy
+Courses likely to fit under this learning outcome:
+Food Systems Advocacy and Policy Change
+ Focuses on strategies for advocating for changes to food policy at local, national, or global levels.
+
+
+Political Economy of Food Systems
+ Explores the intersection of politics, economics, and food systems, focusing on how to influence food systems policies.
+
+
+Social Movements and Food Justice
+ Analyzes historical and contemporary food justice movements and explores the role of advocacy in changing food systems.
+
+
+Food Security Policy and Advocacy
+ Focuses on global and local food security issues and how students can engage in advocacy to improve food security outcomes.

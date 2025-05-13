@@ -1,0 +1,30 @@
+---
+title: Pacific Food System Education Analysis
+author: M.K. Lau
+
+---
+
+
+
+
+```{r setup, echo = FALSE, results = "hide"}
+
+if (!("pacman" %in% installed.packages()[, 1])) {
+    
+  install.packages("pacman")
+
+} else {
+    
+  library(pacman)
+  p_load(RCurl, XML, rvest, magrittr, wordcloud, 
+         RColorBrewer, rmarkdown, bipartite, igraph, 
+         googlesheets4, knitr, xtable, reshape2)
+
+}
+
+
+
+scfs <- "https://westoahu.hawaii.edu/scfs/curriculum/"
+
+
+```
