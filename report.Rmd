@@ -5,6 +5,15 @@ author: M.K. Lau
 ---
 
 
+- Compare the different programs using Ebel
+- Do a comparison of the stated program description with the course
+descriptions based on Ebel/Roland framework. 
+- 
+
+- Wordclouds
+- Princomp
+- Heatmap (notebook LM results)
+
 
 
 ```{r setup, echo = FALSE, results = "hide"}
@@ -22,9 +31,66 @@ if (!("pacman" %in% installed.packages()[, 1])) {
 
 }
 
+ebel <- readLines("data/ebel_framework_lo.txt")
+scfs <- readLines("data/scfs_program.txt")
 
 
-scfs <- "https://westoahu.hawaii.edu/scfs/curriculum/"
+```
+
+
+```{r ebel, echo = FALSE, results = "hide"}
+
+ebel.head <- grep("\\#", ebel)
+lo.kw <- ebel[(ebel.head[2] + 1):(ebel.head[3] - 1)]
+lo.kw <- lo.kw[lo.kw != ""]
+lo.kw <- lo.kw[!(grepl("Keywords:", lo.kw))]
+kw.head <- grep("LO ", lo.kw)
+kw <- list()
+for (i in seq_along(kw.head)){
+    if (i < length(kw.head)){
+        kw [[i]] <- lo.kw[(kw.head[i] + 1):(kw.head[i + 1] - 1)]
+    }else{
+        kw [[i]] <- lo.kw[(kw.head[i] + 1):length(lo.kw)]
+    }
+}
+
+names(kw) <- lo.kw[kw.head]
+
+for (i in seq_along(kw)){
+    kw[[i]] <- unlist(strsplit(kw[[i]], " / "))
+}
+
+```
+
+
+```{r scfs_analysis, echo = FALSE, results = "hide"}
+
+scfs.collapse <- paste(scfs, collapse = " ")
+scfs.collapse <- tolower(scfs.collapse)
+
+scfs.ebel <- kw
+
+for (i in seq_along(kw)){
+    for (j in seq_along(kw[[i]])){
+        scfs.ebel[[i]][j] <- as.numeric(grepl(kw[[i]][j], scfs.collapse))
+    }
+}
+
+scfs.ebel <- lapply(scfs.ebel, as.numeric)
+
+```
+
+
+```{r scfs_results, echo = FALSE}
+
+scfs.ebel
+
+wc <- unlist(lapply(scfs.ebel, sum))
+
+labs <- unlist(lapply(strsplit(names(wc), ":"), function(x) x[[1]]))
+names(wc) <- labs
+
+barplot(wc, las = 2)
 
 
 ```

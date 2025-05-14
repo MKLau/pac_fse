@@ -1,4 +1,5 @@
 # LO_descriptions
+
 LO1: Analyze Food Systems Using a Transdisciplinary Approach Guided by Sustainability Principles
 Students learn to apply systems thinking to food systems—considering the complex interactions from production to waste—through a holistic and pluralistic lens. This means recognizing interconnected social, ecological, cultural, and health dimensions and valuing diverse perspectives, especially from those impacted by food systems. The approach is transdisciplinary, integrating knowledge from across and beyond academic disciplines. The goal is to develop rich, multi-voiced, often visual representations (like rich pictures or concept maps) that reflect the complexity, dynamics, and sustainability challenges of real-world food systems.
 LO2: Critically Reflect on Interactions Between Worldviews and Power Relations in Food Systems, Recognizing One’s Positionality and Learning Processes
@@ -17,9 +18,11 @@ This outcome focuses on developing students’ ability to lead, facilitate, and 
 
 LO 7: Co-design, Implement, and Assess Food System Solutions Across Scales
 Building on earlier LOs, this outcome involves using systems thinking to develop, apply, and evaluate sustainability solutions in real-world contexts. Students must co-design projects with stakeholders, communicate across disciplines, and assess outcomes using appropriate tools. Activities often include participatory research, service learning, and capstone projects aimed at addressing complex, multi-scale food system issues collaboratively.
-LO 1: Systems Thinking
+
 
 # Keywords
+
+LO 1: Systems Thinking
 systems thinking
 
 
