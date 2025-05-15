@@ -4,15 +4,18 @@ author: M.K. Lau
 
 ---
 
+# Summary
 
-- Compare the different programs using Ebel
-- Do a comparison of the stated program description with the course
+Project files are on Google Drive:
+https://drive.google.com/open?id=1imgIb_voKPfAizWXIeVZKX68lGW_sZw0&usp=drive_fs
+
+## Things to do
+-[X] Compare the different programs using Ebel
+-[X] Do a comparison of the stated program description with the course
 descriptions based on Ebel/Roland framework. 
-- 
-
-- Wordclouds
-- Princomp
-- Heatmap (notebook LM results)
+-[X] Wordclouds
+-[X] Princomp
+-[X] Heatmap (notebook LM results)
 
 
 
@@ -31,9 +34,78 @@ if (!("pacman" %in% installed.packages()[, 1])) {
 
 }
 
-ebel <- readLines("data/ebel_framework_lo.txt")
-scfs <- readLines("data/scfs_program.txt")
 
+```
+
+```{r fse_deps, echo = TRUE}
+
+#' Food System Education Analysis Functions
+#'
+#' This is a set of functions for analyzing food system
+#' program data.
+#'
+#' @param x Text for a program.
+#' @param kw Named list of key words.
+
+analyze_kw <- function(x = "text", kw = "keywords"){
+
+    x.collapse <- paste(x, collapse = " ")
+    x.collapse <- tolower(x.collapse)
+
+    out <- kw
+    
+    for (i in seq_along(kw)){
+        for (j in seq_along(kw[[i]])){
+            out[[i]][j] <- as.numeric(grepl(kw[[i]][j], x.collapse))
+        }
+    }
+    
+    out <- lapply(out, as.numeric)
+    
+    return(out)
+
+}
+
+#' Create alignment heat map
+#'
+#' @param x Alignment data frame.
+
+quant_align <- function(x){
+    x <- tolower(x)
+    out <- c(grepl("weak", x), 
+             grepl("partially", x),
+             grepl("moderate", x),
+             grepl("strongly", x),
+             grepl("fully", x))
+    out <- c(0, seq_along(out)[out])
+    out <- max(out)
+    return(out)
+}
+
+
+```
+
+```{r load_data}
+
+## load data files
+ebel <- readLines("data/ebel_framework_lo.txt")
+
+scfs.courses <- readLines("data/scfs_courses.txt")
+scfs.program <- readLines("data/scfs_program.txt")
+
+ctahr.courses <- readLines("data/ctahr_courses.txt")
+ctahr.program <- readLines("data/ctahr_program.txt")
+
+usp.courses <- readLines("data/usp_courses.txt")
+usp.program <- readLines("data/usp_program.txt")
+
+
+tab.align <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1u3fUuchbD1iYc_YHG3pOZW60s0CRn2jdBpiKn89g-WY/", 
+                                  sheet = "alignment_table")
+tab.align <- as.data.frame(tab.align)
+rownames(tab.align) <- tab.align[, 1]
+tab.align <- tab.align[, -1]
+hm.align <- apply(tab.align, 2, function(x) sapply(x, quant_align))
 
 ```
 
@@ -63,34 +135,98 @@ for (i in seq_along(kw)){
 ```
 
 
-```{r scfs_analysis, echo = FALSE, results = "hide"}
+```{r analysis, echo = FALSE, results = "hide"}
 
-scfs.collapse <- paste(scfs, collapse = " ")
-scfs.collapse <- tolower(scfs.collapse)
+kwa.scfs.courses <- analyze_kw(scfs.courses, kw)
+kwa.scfs.program <- analyze_kw(scfs.program, kw)
 
-scfs.ebel <- kw
+kwa.ctahr.courses <- analyze_kw(ctahr.courses, kw)
+kwa.ctahr.program <- analyze_kw(ctahr.program, kw)
 
-for (i in seq_along(kw)){
-    for (j in seq_along(kw[[i]])){
-        scfs.ebel[[i]][j] <- as.numeric(grepl(kw[[i]][j], scfs.collapse))
-    }
-}
+kwa.usp.courses <- analyze_kw(usp.courses, kw)
+kwa.usp.program <- analyze_kw(usp.program, kw)
 
-scfs.ebel <- lapply(scfs.ebel, as.numeric)
+kwa.all <- rbind(unlist(lapply(kwa.scfs.program, sum)),
+                 unlist(lapply(kwa.scfs.courses, sum)),
+                 unlist(lapply(kwa.ctahr.program, sum)),
+                 unlist(lapply(kwa.ctahr.courses, sum)),
+                 unlist(lapply(kwa.usp.program, sum)),
+                 unlist(lapply(kwa.usp.courses, sum)))
+rownames(kwa.all) <- c("scfs_program",
+                       "scfs_courses",
+                       "ctahr_program",
+                       "ctahr_courses",
+                       "usp_program",
+                       "usp_courses")
+kwa.d <- dist(kwa.all)
+kwa.pc <- princomp(kwa.d)
+
+wc.scfs.courses <- unlist(lapply(kwa.scfs.courses, sum))
+wc.scfs.program <- unlist(lapply(kwa.scfs.program, sum))
+
+wc.ctahr.courses <- unlist(lapply(kwa.ctahr.courses, sum))
+wc.ctahr.program <- unlist(lapply(kwa.ctahr.program, sum))
+
+wc.usp.courses <- unlist(lapply(kwa.usp.courses, sum))
+wc.usp.program <- unlist(lapply(kwa.usp.program, sum))
+
+align.hm <- apply(tab.align, 2, function(x) sapply(x, quant_align))
+
+```
+
+```{r results_similarity}
+
+biplot(kwa.pc)
+
 
 ```
 
 
-```{r scfs_results, echo = FALSE}
+```{r results_wordclouds, echo = FALSE}
 
-scfs.ebel
+wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
 
-wc <- unlist(lapply(scfs.ebel, sum))
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "SCFS Program", cex = 2)
+wordcloud(wc.labs, wc.scfs.program, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
 
-labs <- unlist(lapply(strsplit(names(wc), ":"), function(x) x[[1]]))
-names(wc) <- labs
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "SCFS Courses", cex = 2)
+wordcloud(wc.labs, wc.scfs.courses, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
 
-barplot(wc, las = 2)
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "CTAHR Program", cex = 2)
+wordcloud(wc.labs, wc.ctahr.program, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
 
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "CTAHR Courses", cex = 2)
+wordcloud(wc.labs, wc.ctahr.courses, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "USP Program", cex = 2)
+wordcloud(wc.labs, wc.usp.program, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "USP Courses", cex = 2)
+wordcloud(wc.labs, wc.usp.courses, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+
+
+```
+
+```{r result_heatmap}
+
+heatmap(abs(hm.align - max(hm.align)), Colv = NA, Rowv = NA, col = terrain.colors(256))
 
 ```

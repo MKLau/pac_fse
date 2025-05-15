@@ -1,66 +1,220 @@
-USP Course Descriptions
+USP college of agriculture
 
-AG111 Introduction to Agricultural Economics (3)
- This course is an introduction to basic economic ideas within an agricultural context. Topics include agricultural production resources, marginal analysis, input combinations, product interrelationship, cost concepts, economics of scales, and type of agricultural markets.
-AG124 Fundamentals of Soil Science (3)
- This course introduces students to the basic knowledge of soil formation, the physical, chemical and biological properties of soil, soil fertility and fertilizers, soil survey and classification, soil erosion and soil management in relation to crop production.
-AG134 Agricultural Mechanisation (3)
- The course gives the student a basic understanding of the internal combustion engine and its maintenance. It exposes students to a range of machines and equipment available for use in agriculture and provides some hands-on training in their operations and maintenance with special emphasis on tractors and some cultivation implements.
-AG164 Introductory Agricultural Biology (3)
- This course introduces students to basic plant biology relevant to crop production. Topics include basic concepts of botany, anatomy, morphology, physiology, taxonomy, ecology, cell biology, genetics and plant breeding, and tropical environment and effects of climatic factors on crop growth and development in the South Pacific.
-AG165 Field & Plantation Crop Production (3)
- This course provides detailed studies of production aspects of the most important field, plantation, and horticulture crops in the South Pacific region. Each crop is assessed for its place, economic significance and potential in the region and possible improvements in production and quality.
-AG172 Introduction to Animal Science (3)
- This course provides students with basic knowledge of the domestication and contribution of farm animals to man, their adaptation (anatomy and physiology) and routine management practices. The course emphasizes the application of these concepts to real farm situations.
-AG211 Agricultural Development (3)
- The course examines the major problems of agricultural development confronting tropical countries, especially in the South Pacific. It takes an interdisciplinary approach to natural, human and technological resource management, institutional effects, markets, infrastructure, aid, and trade.
-AG212 Farm Management (3)
- This course integrates agricultural economics with technical husbandry skills and puts them into a management and planning framework using data and experiences from Pacific farmers.
-AG213 Agricultural Statistics (3)
- This course introduces students to statistical methods in agricultural data analysis, including hypothesis testing, experimental designs, and variable relationships.
-AG221 Soil Fertility & Plant Nutrition (3)
- This course provides knowledge of soil fertility parameters affecting crop growth and teaches practices to maintain and improve land productivity in the South Pacific.
-AG266 Horticultural Crops Production (3)
- This course covers land selection, propagation, nursery management, cropping systems, and production techniques for vegetables and ornamental crops in the South Pacific.
-AG268 Pathogens & Pests of Crops (3)
- This course introduces organisms causing plant diseases and damage, emphasizing their identification, biology, and the damage they cause, forming a foundation for crop protection studies.
-AG273 Monogastric Livestock Production (3)
- This course covers pig and poultry production systems, including breeds, housing, feeding, health care, product quality, and industry status in the South Pacific.
-AG311 Agricultural Project Management (3)
- This course covers agricultural project appraisal, planning, financing, monitoring, and evaluation, with emphasis on decision-making tools and management in South Pacific settings.
-AG312 Agricultural Marketing & Supply Chains (3)
- This course provides tools to analyze agricultural marketing and supply chains, focusing on Pacific Island contexts, regulations, consumer protection, and food safety standards.
-AG314 Agribusiness Finance & Risk Management (3)
- This course covers financial decision-making tools for agribusinesses, including investment appraisal, financial statements, risk management frameworks, and asset valuation.
-AG351 Agricultural Extension (3)
- This course covers planning and communication methods for agricultural extension, considering sociocultural factors. Students implement an extension program in a rural community.
-AG363 Pest & Disease Management (3)
- This course integrates pest and disease management with crop husbandry, emphasizing biological and cultural control within integrated management strategies.
-AG364 Sustainable Agricultural Production (3)
- This course explores the interface of climate change and agriculture and teaches techniques for sustainable management of resources in diverse Pacific farming systems.
-AG366 Crop Physiology & Breeding (3)
- This course covers tropical crop physiology and plant breeding, including development control, canopy structure, dry matter production, breeding schemes, and genetic resource conservation.
-AG372 Animal Genetics & Breeding (3)
- This course covers genetics and breeding in livestock, including gene actions, variation, selection, breeding systems, and reproductive technologies.
-AG373 Ruminant Livestock Production (3)
- This course covers ruminant farming systems in the Pacific, including breeds, nutrition, pasture management, diseases, and product value.
-AG383 Research Project Management Skills (3)
- This course teaches agricultural research methods and project management. Students conduct field research, analyze data, and report findings.
-AG401 Experimental Design (3)
- No detailed course description available.
-AG411 Production & Managerial Economics (3)
- This course teaches applied economic techniques for farm production analysis, including decision theory, cost functions, and efficiency under uncertainty.
-AG412 Advanced Agricultural Marketing (3)
- This course focuses on managing agricultural supply chains and marketing strategies for sustainability and competitiveness, including food safety systems like HACCP.
-AG415 Agricultural & Rural Development Policy (3)
- This course analyzes agricultural and rural development policies, focusing on developing countries and Pacific Island contexts across marketing, finance, land reform, and climate change.
-AG422 Advanced Soil Fertility & Plant Nutrition (3)
- This course examines plant nutrients, soil organic matter, and fertility evaluation methods for fertilizer recommendations and crop nutrition.
-AG461 Advanced Crop Physiology (3)
- This course analyzes physiological crop processes affecting yield, including light interception, photosynthesis, and dry matter partitioning.
-AG464 Advanced Pest & Disease Management (3)
- This course presents advanced pest and disease management strategies, including IPM, monitoring techniques, and sustainability in agriculture and public health.
-AG465 Mixed Cropping (3)
- This course examines yield benefits and ecological interactions in mixed cropping systems, including experimental design for plant competition studies.
-AG471 Advanced Poultry & Pig Production (3)
- This course focuses on modern poultry and pig production practices, covering breeds, housing, nutrition, diseases, processing, and marketing in the Pacific.
+Bachelor of Agriculture (Applied Sciences)
+On successful completion of this programme, graduates are expected to be able to:
+Apply core knowledge in the field of agricultural sciences in the Pacific Island Countries (PICs).
+Conduct agricultural research ethically following appropriate research design and methods;
+Solve problems in a range of different situations in agricultural sciences;
+Engage with farmers and other agriculture-interested stakeholders, including designing and conducting training and outreach activities;
+Collaborate ethically and effectively in agricultural contexts;
+Practise agricultural sciences recognising the social, cultural, environmental and economic needs of the PICs.
+
+Discipline of Agriculture and Food Technology
+The Agriculture and Food Technology (AFT) Discipline of the School of Agriculture, Geography, Environment, Ocean and Natural Sciences (SAGEONS) is situated at the Samoa Campus of the University of the South Pacific. Samoa Campus was originally the South Pacific Regional College of Tropical Agriculture (SPRCTA), established with New Zealand Assistance in the early 1960s under the Colombo Plan. In 1977, the Government of Samoa leased SPRCTA to The University of the South Pacific, which became its School of Agriculture (SOA), later School of Agriculture and Food Technology (SAFT). Following a restructure of the USP in 2021, SAFT became a discipline (AFT) under the SAGEONS. The AFT Discipline offers Undergraduate to Postgraduate programmes in two broad academic disciplines (Agribusiness and Agri. Sciences). The Bachelor in Agriculture (Bag) is a 3-year programme consisting of twenty-four courses (eight courses at each year level). Our programmes are externally reviewed on a 5-year interval to meet the changing needs of the Agriculture Sector in the region. The most recent review of the programme was done in 2020.
+Mission
+The Mission Statement of the Discipline of Agriculture and Food Technology Our mission is to assist in meeting the agricultural and related needs, and improving the welfare and livelihood of the communities of the South Pacific region by:
+Providing agricultural education directly through teaching and research and indirectly through the training of teachers and advisers.
+Developing and adapting sustainable new technologies to improve agricultural production and productivity that is sensitive to long-term food security and rural development and resource conservation.
+Disseminating information throughout the region by face-to-face contact, as well as by extensive use of print and electronic media through collaboration
+In line with its Mission Statement, the Agriculture and Food Technology Discipline has the following objectives:
+1. Production of agricultural professionals that would complement and work synergistically with farmers and other stakeholders, to achieve national and regional food security goals.
+AFT graduates should be capable of accomplishing the following:
+Effectively engage in agricultural production, research, education and extension services for sustainable agricultural and rural development in the region and beyond.
+Apply acquired knowledge and skills into practice by establishing and gainfully managing farms and other agro-allied enterprises, thereby becoming self-employing as well as creating employment for other people.
+Pursue postgraduate studies in their chosen field of agriculture anywhere in the world, in order to be better equipped to serve the national, regional, as well as international agricultural needs.
+2. Serving as an effective instrument for the implementation of the policies of the national and regional governments in agriculture and rural development, thereby contributing prominently towards overall national and regional development.
+3. Localisation of training to ensure that trained personnel acquire the capacity for identifying, prioritising and addressing the agricultural needs of their countries and the region.
+
+
+USP Alumni Testimonials
+
+School of Agriculture, Geography, Environment, Ocean and Natural Sciences (SAGEONS)
+
+I am so grateful that Samoa has it’s own USP campus. After teaching for 20 years, I still have that feeling of learning something new and there was no other place to go to but USP.
+
+I entered USP as a matured student in 2017. Three years of learning was very challenging however the tutors and lecturers were very friendly and easy to approach. USP Samoa campus was my home away from home. All the people working there were my mentors, motivators, advisers, disciplinarians and of course my friends. What i love the most was the experience of meeting new people and making new friends with other students from around the Pacific. USP has offered a wide range of learning modes from face to face to online learning or DFL. . I have learnt to be more strategic and organized, observant and analytical which makes works more manageable and enjoyable at the same time. Lastly, USP has given me a life changing experience. I am a College Principal now, however this would not be made possible without the assistance of the high caliber tutors and lecturers whom have taught me lifetime leadership skills and helped shaped my career.
+So'oalo Rikisone Selulo Bachelor of Science majoring in Biology and Chemistry Principal- Itu Asau College, Savaii, Samoa
+
+Studying at USP has enriched me with the necessary skills and content knowledge I needed in the teaching of chemistry and physics at high school level. I have also enjoyed learning and making friends with other ethnic groups around the region.
+Lily Loni Fangupō
+Bachelor of Science majoring in Chemistry and Physics Deputy Principal at Ha’apai High School Ministry of Education and Training, Tonga
+School of Agriculture, Geography, Environment, Ocean and Natural Sciences Testimonials
+Student Testimonials
+
+USP, a fabulous University to be!! Coming to study at USP is a remarkable lifetime opportunity for me as a regional student. Generally, the environment, the vision, mission and the graduating core values hold the fundamental pillars that this premier institution aspires to achieve. Personally, engaging with Science at USP is a milestone and lifelong learning experience. Profoundly, it enables, deepens and employs students to be rational as well as critical in their articulations. More so, the context of scientific study here is very relevant to our regional needs without compromising on the global standards and quality of delivery. The learning platform and modes of teaching are incredibly diverse but inclusive. The lecturers are some of the finest researchers in their respective areas of specialty that enriches students’ knowledge and provide a fulfilling learning experience.
+Mr. Peter Maclean (Final Year Chemistry Student)
+
+
+
+It is a challenge being a university student. Then again everything in life is a challenge. I have been studying here at USP-Samoa Campus for 3 years already and I can confidently say that I love it here. The campus offers limited face to face courses but this only makes it more focused. Not only that, but the campus also provides a wide range of other programmes online which are made available to students. On campus we learn to make our own choices. We are free to do as we please; however, this freedom comes with limits and the responsibility of making sure to abide by campus regulations. I learned teamwork, made new friends and maybe picked up basic phrases from other languages due to the multi-cultural nature of USP. The campus also provides the opportunity for one to showcase their abilities in terms of leadership, sportsmanship and others. USP-Samoa campus is a small campus. But is an understatement because the ripples of its positive impacts stretch further than the Pacific Ocean. I chose agriculture because I hated gardening life. Growing up, I never enjoyed doing outdoor gardening activities. However, as I matured I started to think about my future and how I will end up depending on the soil to plant my food, how I will need to raise chickens for local meat which I love so much.
+I came to the realization that Agriculture is a part of life and that I would not be alive and healthy today if my parents had not planted the taro we ate for dinner every night. I started growing interest and even though I struggled at first with Agriculture courses I kept trying. Eventually things became easy enough to work with. Agriculture as a major may seem simple, but it opens many doors to multiple career options because mastery of Agriculture requires mastery of other subjects such as Chemistry, Biology, Physics, Accounting and Economics. There is so much more to studying Agriculture on this Campus, and that is the beauty of it and the main reason I am still enjoying the choice I made 3 years ago.
+Kellon Maliudiu MOSES
+Completed Bachelor of Agriculture – 2021, Currently enrolled in Postgraduate Diploma in Agriculture
+Vanuatu
+
+
+
+Why did you choose to study at SAGEONS, USP?
+Studying Chemistry and Biology under SAGEONS is to achieve my aim of acquiring knowledge, skills, and to understand the molecular level of the environment and its significance.
+What have you enjoyed most about the Programme so far?
+BSc overs great or massive learning experience you could ever dream of. The program is enjoyable in a sense that it allows you to experience new ideas or knowledge behind what is visible within our environment.
+Are you involved with any clubs, societies or any other extracurricular activities at the university and how do they add to your overall university experience?
+Engaging myself in group projects in carrying out field or lab experiment makes the learning interesting, where it motivates me to keep working harder to achieve my aim.
+Apart from that, involving in religious, soccer and gym activities is fun and enjoyable in terms maintaining the metal, social and physical health.
+An eye catching sentence to highlight your experience.
+SAGEONS is available to student interested in pursuing their studies in all variety of science disciplines (BSc, MSc, Esc, etc.). It overs professional learning experience through helpful and supportive professors, tutors and teaching assistances.
+Steven Aru
+Bachelor of Science (Biology and Chemistry)
+Vanuatu
+
+
+
+Why did you choose to study at SAGEONS, USP?
+Ever since high school, I knew I wanted to pursue the natural sciences. But I was confused on whether I should go with Biology or Chemistry. Ultimately I chose SAGEONS because the BSc programme provided me with an opportunity to study both fields. The option to pick areas I wished to specialize in, along with the diverse student and teaching body solidified my decision.
+What have you enjoyed most about the programme so far?
+The courses are engaging and interactive. I enjoyed getting hands-on experience through the several lab practicals we had.
+Are you involved with any clubs, societies or any other extracurricular activities at the university and how do they add to your overall university experience?
+I occasionally volunteered with the Chemical Society of the South Pacific The opportunity to work closely with several talented staff and students offered me a new perspective on my goals.
+An eye catching sentence to highlight your experience.
+The staff at the University of the South Pacific genuinely cares about your education and making your student experience a positive one.
+Lavi Singh
+Bachelor of Science (Biology and Chemistry)
+Fiji
+
+
+
+Being a student again after graduating from the University of the South Pacific for more than 25 years is such a rewarding experience. I have never dreamed and even thought that I would end up in the classroom again. But, here I am being so blessed with the opportunity given to further my studies to a higher level. Indeed I am grateful and I support the famous saying that “age is not the limit to going further and gaining a higher and a better education”.
+I’m grateful to GOD my heavenly Father for his love and guidance and for never giving up on me. I extend my sincere gratitude to the government of Tonga for funding my studies and for all my families and friends for the strong support that enabled me to continue my academic journey. A great fakamalo to my lecturers, my Samoan families and my Tongan family at Alafua, Samoa Campus for your love, encouragements and your support that keep me going strong until I accomplish my goals at university.
+I am so blessed to be educated at the USP-Samoa Campus and I can say that I have gained in-depth knowledge and improved my skills in the areas that I am interested in. Since I have taught for almost 20 years after graduating from USP, I do believe that I have learnt new methods of teaching, gain content and core knowledge of my major subjects and I have acquired new ways of farming as well as new strategies to improve learning and teaching for the benefit of my students.
+I love to study at USP as this will always be a part of me because this is where I learnt how to grow crops and raise different animals. This is also the place where I learnt about a variety of island cultures and island languages. This is the place that reminds me of my true identity. I wish to encourage and challenge future generations to come to USP. I enjoy living among a multicultural community that share common values and beliefs but most of all I love living among a community of people that help and support each other. God bless you all.
+So’otino Sala’evalu SAMAU TAUGAKAVA
+Master of Agriculture
+Samoa
+
+
+Alumni Testimonials
+
+I am so grateful that Samoa has it’s own USP campus. After teaching for 20 years, I still have that feeling of learning something new and there was no other place to go to but USP.
+I entered USP as a matured student in 2017. Three years of learning was very challenging however the tutors and lecturers were very friendly and easy to approach. USP Samoa campus was my home away from home. All the people working there were my mentors, motivators, advisers, disciplinarians and of course my friends. What i love the most was the experience of meeting new people and making new friends with other students from around the Pacific. USP has offered a wide range of learning modes from face to face to online learning or DFL. . I have learnt to be more strategic and organized, observant and analytical which makes works more manageable and enjoyable at the same time. Lastly, USP has given me a life changing experience. I am a College Principal now, however this would not be made possible without the assistance of the high caliber tutors and lecturers whom have taught me lifetime leadership skills and helped shaped my career.
+
+#SAGEONS
+Samoa
+
+So’oalo Rikisone Selulo
+Bachelor of Science (Bio/Chem) STAP
+Principal-Itu Asau College, Savaii Samoa
+
+Studying at USP has enriched me with the necessary skills and content knowledge I needed in the teaching of chemistry and physics at high school level. I have also enjoyed learning and making friends with other ethnic groups around the region.
+
+#SAGEONS
+Tonga
+
+Lily Loni Fangupō
+Bachelor of Science majoring in Chemistry and Physics
+Deputy Principal at Ha’apai High School
+Ministry of Education and Training, Tonga
+
+
+
+USP has shaped me into becoming a habitual learner and to always think critically!
+USP has empowered my career with great network and lifetime friends whom I share memories of life changing experiences.
+I have learnt that refusing to give up is the first step to becoming successful. Make robust goals so that any obstacles or failures will only motivate you!
+#SAGEONS
+
+Samoa
+
+Tokase Takayawa Cakaunivere - Bakabaka
+Real Estate & Land Use Planning,
+Senior Coordinator – Estates & Infrastructure,
+The University of the South Pacific, Samoa Campus
+
+
+
+The University of the South Pacific provides ALL a person needs in order to serve his/her own family, community and nation. USP is the BEST.”
+
+#SAGEONS
+Tonga
+Edgar Haak
+Bachelor of Arts, PGDip in Arts, and Master of Arts in Geography
+Secondary School Principal of St Peter Chanel College, Vava’u
+Catholic Education System of the Diocese of Tonga and Niue.
+
+
+
+He secured a prestigious John Allwright fellowship to undertake a PhD study at the Queensland University of Technology (QUT), Australia. Dr. Sukal started his career as a conservation scientist at Birdlife International and then later joined Center of Pacific Crops and Trees (CePaCT) of the Pacific Community (SPC). One of the highlights of his career is to establish a protocol to enable the pathogen testing of yams to facilitate germplasm exchange to improve food security and facilitate commercial agricultural opportunities in the Pacific region. He is now a qualified plant virologist and is currently heading the germplasm health testing of CePaCT-SPC. Dr. Sukal recognizes that USP has been instrumental in shaping his career so that he can serve the Pacific region, addressing the food security issues.
+Dr Amit Sukal
+Bachelor of Science in Chemistry and Biology and Postgraduate Diploma in Biology in 2005 and Master of Science in Biology in 2014 from the University of the South Pacific (USP)
+
+
+
+
+I continued my postgraduate studies under the Graduate Assistant Program, taking up a Master of Science in Chemistry. During my research journey, I have worked in the field of Environmental Chemistry, having researched on evaluating methane in ambient air and from the agriculture sector. I have worked with excellent scientists in an exceptional research environment at USP. My research experience has contributed tremendously to my career, enabling me to bridge gaps between science and policy. These achievements have helped me to stand out in my career and brought me to new heights both nationally and internationally.
+Deepitika Chand
+Climate Change Mitigation Officer 1, Climate Change and International Cooperation Division, Ministry of Economy.
+Certificate of Proficiency, GHGMI; Certificate IV in Project Management, USP PacificTAFE; Bachelor of Science (Biology and Chemistry), USP; Master of Science (Chemistry), USP
+
+
+
+
+
+I grew up in a farming family where our livelihood depended on agriculture and the daily struggle to generate a consistent income was real. Agriculture was a field I wanted to further my studies in because I believed that if done well, it can be the backbone of my country’s economy. I pursued a Bachelor’s Degree and a Master’s Degree in Agriculture at the University of the South Pacific Alafua Campus. I continued my studies under a Fulbright Scholarship at the University of Hawaii, Manoa and attained a PhD. I have worked for international organisations such as UNDP and FAO. I have taught at the University level and currently, I am the Assistant Chief Executive Officer for the Agriculture Sector Coordination Division in the Ministry of Agriculture and Fisheries in Samoa. The Agriculture Program at USP gave me the foundation and opportunities to put into action my dreams.
+Dr Ramona Stephanie SULIFOA
+Completed Bachelor of Agriculture - 2003/ Master in Agriculture - 2007, Samoa
+
+
+
+
+
+
+It has been said that “success is a science, if you have the conditions, you get the results”
+(Oscar Wilde).
+Setting goals and attempting to achieve them teaches a person about themselves, about life and about the world. Let’s dive and get a glimpse of my personal success story. When I was a student, I had my interest in doing science. Then slowly I developed my interest in food side also, so I tried to blend both of my interests and decided to take Chemistry together with Food and Nutrition Studies. However, when I joined USP it was a requirement to take Education units together with Chemistry and Food and Nutrition Studies in which I was given a scholarship by NTS.
+It is said that every success stories has emotions and tragedies with it as well. When I was in my first year at USP (2016), I lost my father which was a big blow for me. I was shattered, but his blessings were always with me. This incident made me strong and showed me that life is not a bed of roses and it is full of challenges and obstacles and we have to be strong to tackle it. From there on, I became more focused towards my studies and started to climb the ladder of success. In 2017, I was awarded with Dean’s Award for the Most Outstanding First Year Student, FALE. I was also the Peer Mentor, PASS Leader and E-mentor for Chemistry and last year (2020) I was awarded with the Gold Medal and Prize for the most Outstanding Graduate with a major in Education. After graduating, for one year I worked as a Part-time lab demonstrator for Chemistry and recently I joined CJ Patel & Company Pte Limited as a Graduate Trainee. This training program will mold us to work in the industries and experience real life working environment. I work as a Quality Assurance and Lab Analyst and will explore working in the four entities of CJ Patel Company which are Pacific Batteries Limited, Fiji Dairy Limited, Viti Foods Limited and Alfa. Currently I am also doing my Post Graduate Diploma in Science, Chemistry and this is my second last unit this semester. My future goal is to pursue Masters in Chemistry and work in Food industries.
+In a nutshell, my journey with USP was a great experience. The guidance provided by the academic staff has helped me to complete my studies successfully. Also, the immense support provided by my parents and families has helped me to become the person I am today.
+“Don’t be afraid to be ambitious about your goals. Hard work never stops. Neither should your dreams” (Dwayne Johnson). Thus, it has been said “Always do your best. What you plant now, you will harvest later” (Og Mandino).
+Reeha Sharma
+Bach of Science /Graduate Certificate in Education
+Graduate Trainee - CJ Patel & Company Pte Limited
+
+
+
+I am currently working at FMF Foods Ltd as Quality Assurance Associate. As a Quality Assurance Associate my responsibility is to ensure that products and services meet established standards set by company. My duties include maintaining strong overall quality control of products made by the company adhering to reliability, performance and customer expectation. Inspection and testing of products is part of my job with the obligation to report and document findings. As a Quality Assurance Associate I have to sit, stand and walk around for long hours at a time. Day to day my work involves using variety of skills which I learned at my time at USP whether it be theoretical or practical.
+I have always wanted to study at USP and it was a dream come true when I received my offer letter under TELS scheme. However, Studying biology and Chemistry is a fascinating experience. As it’s a continually evolving area of science where breakthroughs are always being made it feels great to be part of it. My degree has benefited me in so many ways and will continue to for the rest of my life. USP is not just a place for learning it will upgrade your skills, socializing, physical activities and my ever favorite spot to go ‘’Library’’ this will definitely help you strike the perfect balance between work, sport, societies and lifestyle. After graduating from USP I joined FMF Foods and till now I am still employed here previously I worked as an attaché at Ministry of Agriculture Chemistry Laboratory during my summer break, by doing attachment I got on hand experience and work life. In future I would continue to work in FMF and also continue my Post Graduate at USP.
+Payal Narayan
+Bachelor of Science (Biology and Chemistry)
+FMF Foods Ltd as Quality Assurance Associate
+
+
+
+
+
+
+
+I always wanted to pursue my studies in the field of science. The University of the South Pacific was my choice to do Bachelors in biology and chemistry. Entering the university opened doorways to Science for me with impressive technology, learned staff and great support service. After my Bachelors I continued with Masters in Biology and did what I truly enjoy, that is research. I was able to acquire skills and knowledge in my field as well as share ideas and values with students pursuing science all over Pacific. USP paved my path to embark on becoming a researcher and prepared me to pursue further studies. I am currently a PhD student at Osaka University in Japan studying plant protein in the Institute of Protein Research. The University of the South Pacific gave me the boost to reach for the sky, and I am certain that it will do the same for you. Take on the Science, Join USP.
+Prianshika Sen
+Bachelor of Science (Biology and Chemistry)
+PhD student at Osaka University in Japan studying plant protein at the Institute of Protein Research
+
+
+
+
+
+
+
+Studying at USP has been truly a memorable journey. The undergraduate and postgraduate programme structure and the experiences from SAGEONS has facilitated me into becoming a “holistic graduate” and readied me to seek and adapt to employment opportunities with reputable organizations. Currently, as the Senior Environment Officer for the Northern Division, I am able to utilize the knowledge, skills and experiences acquired during my time at USP to serve our people.
+Kavnil Lal
+
+Senior Environment Officer for the Northern Division
+
+
+
+
+
+
+
+USP has given me the best study opportunity of my life. Having such great academics and mentors has enabled me to cherish my virtual classroom and field practical memories.
+"One of the inspiring aspects is that USP provides students with work-integrated education opportunity to help students gain better sense of their chosen program.
+Shanil Sharma
+Bachelor of Agriculture
+Clerical Assistant, USP Lautoka Campus
+
