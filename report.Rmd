@@ -1,7 +1,6 @@
 ---
 title: Pacific Food System Education Analysis
 author: M.K. Lau
-
 ---
 
 # Summary
@@ -222,7 +221,7 @@ align.hm <- apply(tab.align, 2, function(x) sapply(x, quant_align))
 
 ```
 
-```{r result_heatmap, fig.dim = c(7, 8)}
+```{r result_heatmap, cache=TRUE, fig.dim = c(7, 8)}
 
 hm2.in <- abs(max(hm.align) - hm.align)
 ## hm2.in <- hm.align
@@ -247,7 +246,7 @@ heatmap.2((hm2.in),
 ```
 
 
-```{r results_wordclouds, fig.dim = c(6, 6), echo = FALSE, message=FALSE, warning=FALSE}
+```{r results_wordclouds, cache=TRUE, fig.dim = c(6, 6), echo = FALSE, message=FALSE, warning=FALSE}
 
 ## wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
 wc.labs <- names(wc.scfs.program)
@@ -327,7 +326,7 @@ box(lty = "solid", col = "black")
 ```
 
 
-```{r results_wordclouds_lo, fig.dim = c(6, 6), echo = FALSE, message=FALSE, warning=FALSE}
+```{r results_wordclouds_lo, cache=TRUE, fig.dim = c(6, 6), echo = FALSE, message=FALSE, warning=FALSE}
 
 ## wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
 wc.labs <- names(wc.scfs.program)
@@ -383,7 +382,7 @@ box(lty = "solid", col = "black")
 ```
 
 
-```{r results_similarity, fig.dim = c(7, 7), echo = FALSE}
+```{r results_similarity, cache=TRUE, fig.dim = c(7, 7), echo = FALSE}
 
 fviz_pca(kwa.pc, col.var = NA, xlim = c(-5, 5))
 fviz_pca(kwa.kw.pc, col.var = NA, xlim = c(-10, 20), ylim = c(-15, 10))
