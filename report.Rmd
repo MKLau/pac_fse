@@ -10,12 +10,11 @@ Project files are on Google Drive:
 https://drive.google.com/open?id=1imgIb_voKPfAizWXIeVZKX68lGW_sZw0&usp=drive_fs
 
 ## Things to do
--[X] Compare the different programs using Ebel
--[X] Do a comparison of the stated program description with the course
-descriptions based on Ebel/Roland framework. 
--[X] Wordclouds
--[X] Princomp
--[X] Heatmap (notebook LM results)
+- [X] Compare the different programs using Ebel
+- [X] Compare the stated program description with the course descriptions using Ebel
+- [X] Wordclouds
+- [X] Princomp
+- [X] Heatmap (notebook LM results)
 
 
 
@@ -30,7 +29,8 @@ if (!("pacman" %in% installed.packages()[, 1])) {
   library(pacman)
   p_load(RCurl, XML, rvest, magrittr, wordcloud, 
          RColorBrewer, rmarkdown, bipartite, igraph, 
-         googlesheets4, knitr, xtable, reshape2, gplots)
+         googlesheets4, knitr, xtable, reshape2, gplots,
+         corrr, ggcorrplot, FactoMineR, factoextra)
 
 }
 
@@ -80,6 +80,19 @@ quant_align <- function(x){
              grepl("fully", x))
     out <- c(0, seq_along(out)[out])
     out <- max(out)
+    return(out)
+}
+
+#' Return keyword list.
+#'
+#' @param x List of binary word presence vectors.
+#' @param kw Keyword list. 
+
+list_kw <- function(x = "word presences", kw = "keyword list"){
+    out <- x 
+    for (i in seq_along(x)){
+        out[[i]] <- kw[[i]][x[[i]] == 1]
+    }
     return(out)
 }
 
@@ -149,12 +162,18 @@ for (i in seq_along(kw)){
 
 kwa.scfs.courses <- analyze_kw(scfs.courses, kw)
 kwa.scfs.program <- analyze_kw(scfs.program, kw)
+kw.scfs.courses <- list_kw(kwa.scfs.courses, kw)
+kw.scfs.program <- list_kw(kwa.scfs.program, kw)
 
 kwa.ctahr.courses <- analyze_kw(ctahr.courses, kw)
 kwa.ctahr.program <- analyze_kw(ctahr.program, kw)
+kw.ctahr.courses <- list_kw(kwa.ctahr.courses, kw)
+kw.ctahr.program <- list_kw(kwa.ctahr.program, kw)
 
 kwa.usp.courses <- analyze_kw(usp.courses, kw)
 kwa.usp.program <- analyze_kw(usp.program, kw)
+kw.usp.courses <- list_kw(kwa.usp.courses, kw)
+kw.usp.program <- list_kw(kwa.usp.program, kw)
 
 kwa.all <- rbind(unlist(lapply(kwa.scfs.program, sum)),
                  unlist(lapply(kwa.scfs.courses, sum)),
@@ -206,41 +225,120 @@ align.hm <- apply(tab.align, 2, function(x) sapply(x, quant_align))
 ```{r result_heatmap, fig.dim = c(7, 8)}
 
 hm2.in <- abs(max(hm.align) - hm.align)
+## hm2.in <- hm.align
 rownames(hm2.in) <- substr(rownames(hm.align), 1, 3)
 colnames(hm2.in) <- c("USP", "CTAHR", "SCFS")[c(grep("USP", colnames(hm.align)), 
                           grep("CTAHR", colnames(hm.align)),
                           grep("SCFS", colnames(hm.align))
                           )]
 
-lwid <- c(0.1, 5) #make column of dendrogram and key very small and other colum very big 
-lhei <- c(0.1, 5) #make row of key and other dendrogram very small and other row big. 
-
 heatmap.2((hm2.in),
           key = T,
           dendrogram = "none",
           trace = "none",
-          lwid = lwid,
-          lhei = lhei,
-          ##           cexCol = 1.25,
+          cexCol = 1.75,
           col = terrain.colors(256), 
           Colv = F, Rowv = F, 
-          srtCol = 0,
-          margins = c(3, 4))
+          srtCol = 30,
+          margins = c(7, 6),
+          main = "Degree of Misalignment"
+          )
 
 ```
 
 
+```{r results_wordclouds, fig.dim = c(6, 6), echo = FALSE, message=FALSE, warning=FALSE}
 
-```{r results_wordclouds, fig.dim = c(8, 8), echo = FALSE}
+## wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
+wc.labs <- names(wc.scfs.program)
 
-wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "SCFS Program", cex = 2)
+wordcloud(unlist(kw.scfs.program), 
+          rep(1, length(unlist(kw.scfs.program))),
+          min.freq = 1, random.order = F,
+          rot.per = 0,
+          scale = c(2.25, 0.01)
+          )
+box(lty = "solid", col = "black")
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "SCFS Courses", cex = 2)
+wordcloud(unlist(kw.scfs.courses), 
+          rep(1, length(unlist(kw.scfs.courses))),
+          min.freq = 1, random.order = F,
+          rot.per = 0,
+          scale = c(2.25, 0.01)
+          )
+box(lty = "solid", col = "black")
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "CTAHR Program", cex = 2)
+wordcloud(unlist(kw.ctahr.program), 
+          rep(1, length(unlist(kw.ctahr.program))),
+          min.freq = 1, random.order = F,
+          rot.per = 0,
+          scale = c(2.25, 0.01)
+          )
+box(lty = "solid", col = "black")
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "CTAHR Courses", cex = 2)
+wordcloud(unlist(kw.ctahr.courses), 
+          rep(1, length(unlist(kw.ctahr.courses))),
+          min.freq = 1, random.order = F,
+          rot.per = 0,
+          scale = c(2.25, 0.01)
+          )
+box(lty = "solid", col = "black")
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "USP Program", cex = 2)
+wordcloud(unlist(kw.usp.program), 
+          rep(1, length(unlist(kw.usp.program))),
+          min.freq = 1, random.order = F,
+          rot.per = 0,
+          scale = c(2.25, 0.01)
+          )
+box(lty = "solid", col = "black")
+
+layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
+par(mar=rep(0, 4))
+plot.new()
+text(x=0.5, y=0.5, "USP Courses", cex = 2)
+wordcloud(unlist(kw.usp.courses), 
+          rep(1, length(unlist(kw.usp.courses))),
+          min.freq = 1, random.order = F,
+          rot.per = 0,
+          scale = c(2.25, 0.01)
+          )
+box(lty = "solid", col = "black")
+
+```
+
+
+```{r results_wordclouds_lo, fig.dim = c(6, 6), echo = FALSE, message=FALSE, warning=FALSE}
+
+## wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
+wc.labs <- names(wc.scfs.program)
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "SCFS Program", cex = 2)
 wordcloud(wc.labs, wc.scfs.program, min.freq = 1, random.order = F, 
-          scale = c(2, 0.01), rot.per = 0)
+          scale = c(2, 0.1), rot.per = 0)
+box(lty = "solid", col = "black")
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
@@ -248,6 +346,7 @@ plot.new()
 text(x=0.5, y=0.5, "SCFS Courses", cex = 2)
 wordcloud(wc.labs, wc.scfs.courses, min.freq = 1, random.order = F, 
           scale = c(2, 0.1), rot.per = 0)
+box(lty = "solid", col = "black")
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
@@ -255,13 +354,15 @@ plot.new()
 text(x=0.5, y=0.5, "CTAHR Program", cex = 2)
 wordcloud(wc.labs, wc.ctahr.program, min.freq = 1, random.order = F, 
           scale = c(2, 0.1), rot.per = 0)
+box(lty = "solid", col = "black")
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "CTAHR Courses", cex = 2)
 wordcloud(wc.labs, wc.ctahr.courses, min.freq = 1, random.order = F, 
-          scale = c(2, 0.1), rot.per = 0)
+          scale = c(1, 0.01), rot.per = 0)
+box(lty = "solid", col = "black")
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
@@ -269,6 +370,7 @@ plot.new()
 text(x=0.5, y=0.5, "USP Program", cex = 2)
 wordcloud(wc.labs, wc.usp.program, min.freq = 1, random.order = F, 
           scale = c(2, 0.1), rot.per = 0)
+box(lty = "solid", col = "black")
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
@@ -276,14 +378,19 @@ plot.new()
 text(x=0.5, y=0.5, "USP Courses", cex = 2)
 wordcloud(wc.labs, wc.usp.courses, min.freq = 1, random.order = F, 
           scale = c(2, 0.1), rot.per = 0)
+box(lty = "solid", col = "black")
 
+```
+
+
+```{r results_similarity, fig.dim = c(7, 7), echo = FALSE}
+
+fviz_pca(kwa.pc, col.var = NA, xlim = c(-5, 5))
+fviz_pca(kwa.kw.pc, col.var = NA, xlim = c(-10, 20), ylim = c(-15, 10))
+
+fviz_eig(kwa.pc, addlabels = TRUE)
+fviz_eig(kwa.kw.pc, addlabels = TRUE)
 
 ```
 
 
-```{r results_similarity, fig.dim = c(8, 8)}
-
-biplot(kwa.pc, cex = 0.75)
-biplot(kwa.kw.pc, cex = 0.75)
-
-```
