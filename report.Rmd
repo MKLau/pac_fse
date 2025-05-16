@@ -72,7 +72,8 @@ analyze_kw <- function(x = "text", kw = "keywords"){
 
 quant_align <- function(x){
     x <- tolower(x)
-    out <- c(grepl("weak", x), 
+    out <- c(grepl("limited", x), 
+             grepl("weak", x), 
              grepl("partially", x),
              grepl("moderate", x),
              grepl("strongly", x),

@@ -403,7 +403,8 @@ analyze_kw &lt;- function(x = &quot;text&quot;, kw = &quot;keywords&quot;){
 
 quant_align &lt;- function(x){
     x &lt;- tolower(x)
-    out &lt;- c(grepl(&quot;weak&quot;, x), 
+    out &lt;- c(grepl(&quot;limited&quot;, x), 
+             grepl(&quot;weak&quot;, x), 
              grepl(&quot;partially&quot;, x),
              grepl(&quot;moderate&quot;, x),
              grepl(&quot;strongly&quot;, x),
@@ -440,7 +441,8 @@ usp.program &lt;- readLines(&quot;data/usp_program.txt&quot;)
 
 tab.align &lt;- googlesheets4::read_sheet(&quot;https://docs.google.com/spreadsheets/d/1u3fUuchbD1iYc_YHG3pOZW60s0CRn2jdBpiKn89g-WY/&quot;, 
                                        sheet = &quot;alignment_table&quot;)</code></pre>
-<pre><code>## ✔ Reading from &quot;DATA Higher Ed Meets Food Systems Thinking Paper &quot;.</code></pre>
+<pre><code>## ✔ Reading from
+##   &quot;DATA Higher Ed Meets Food Systems Thinking Paper &quot;.</code></pre>
 <pre><code>## ✔ Range &#39;&#39;alignment_table&#39;&#39;.</code></pre>
 <pre class="r"><code>tab.align &lt;- as.data.frame(tab.align)
 rownames(tab.align) &lt;- tab.align[, 1]
