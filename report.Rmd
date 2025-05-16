@@ -30,10 +30,11 @@ if (!("pacman" %in% installed.packages()[, 1])) {
   library(pacman)
   p_load(RCurl, XML, rvest, magrittr, wordcloud, 
          RColorBrewer, rmarkdown, bipartite, igraph, 
-         googlesheets4, knitr, xtable, reshape2)
+         googlesheets4, knitr, xtable, reshape2, gplots)
 
 }
 
+gs4_auth("mklau3@hawaii.edu")
 
 ```
 
@@ -101,7 +102,7 @@ usp.program <- readLines("data/usp_program.txt")
 
 
 tab.align <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1u3fUuchbD1iYc_YHG3pOZW60s0CRn2jdBpiKn89g-WY/", 
-                                  sheet = "alignment_table")
+                                       sheet = "alignment_table")
 tab.align <- as.data.frame(tab.align)
 rownames(tab.align) <- tab.align[, 1]
 tab.align <- tab.align[, -1]
@@ -125,6 +126,15 @@ for (i in seq_along(kw.head)){
         kw [[i]] <- lo.kw[(kw.head[i] + 1):length(lo.kw)]
     }
 }
+
+kw[[4]] <- c(kw[[4]], "practical")
+kw[[4]] <- c(kw[[4]], "training")
+kw[[4]] <- c(kw[[4]], "experiential")
+kw[[4]] <- c(kw[[4]], "project-based")
+kw[[5]] <- c(kw[[5]], "written communication")
+kw[[5]] <- c(kw[[5]], "oral communication")
+kw[[5]] <- c(kw[[5]], "communication")
+kw[[6]] <- c(kw[[6]], "leadership")
 
 names(kw) <- lo.kw[kw.head]
 
@@ -161,6 +171,25 @@ rownames(kwa.all) <- c("scfs_program",
 kwa.d <- dist(kwa.all)
 kwa.pc <- princomp(kwa.d)
 
+kwa.kw.l <- list(kwa.scfs.program,
+                 kwa.scfs.courses,
+                 kwa.ctahr.program,
+                 kwa.ctahr.courses,
+                 kwa.usp.program,
+                 kwa.usp.courses)
+
+kwa.kw.d <- as.matrix(kwa.d)
+
+for (i in seq(1, nrow(kwa.kw.d))){
+    for (j in seq(1, ncol(kwa.kw.d))){
+        kwa.kw.d[i, j] <- sum((unlist(kwa.kw.l[[i]]) - unlist(kwa.kw.l[[j]]))^2)
+    }
+}
+
+kwa.kw.d <- as.dist(kwa.kw.d)
+kwa.kw.pc <- princomp(kwa.kw.d)
+
+
 wc.scfs.courses <- unlist(lapply(kwa.scfs.courses, sum))
 wc.scfs.program <- unlist(lapply(kwa.scfs.program, sum))
 
@@ -174,15 +203,35 @@ align.hm <- apply(tab.align, 2, function(x) sapply(x, quant_align))
 
 ```
 
-```{r results_similarity}
+```{r result_heatmap, fig.dim = c(7, 8)}
 
-biplot(kwa.pc)
+hm2.in <- abs(max(hm.align) - hm.align)
+rownames(hm2.in) <- substr(rownames(hm.align), 1, 3)
+colnames(hm2.in) <- c("USP", "CTAHR", "SCFS")[c(grep("USP", colnames(hm.align)), 
+                          grep("CTAHR", colnames(hm.align)),
+                          grep("SCFS", colnames(hm.align))
+                          )]
 
+lwid <- c(0.1, 5) #make column of dendrogram and key very small and other colum very big 
+lhei <- c(0.1, 5) #make row of key and other dendrogram very small and other row big. 
+
+heatmap.2((hm2.in),
+          key = T,
+          dendrogram = "none",
+          trace = "none",
+          lwid = lwid,
+          lhei = lhei,
+          ##           cexCol = 1.25,
+          col = terrain.colors(256), 
+          Colv = F, Rowv = F, 
+          srtCol = 0,
+          margins = c(3, 4))
 
 ```
 
 
-```{r results_wordclouds, echo = FALSE}
+
+```{r results_wordclouds, fig.dim = c(8, 8), echo = FALSE}
 
 wc.labs <- unlist(lapply(strsplit(names(wc.scfs.program), ": "), function(x) x[[2]]))
 
@@ -190,43 +239,51 @@ layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "SCFS Program", cex = 2)
-wordcloud(wc.labs, wc.scfs.program, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+wordcloud(wc.labs, wc.scfs.program, min.freq = 1, random.order = F, 
+          scale = c(2, 0.01), rot.per = 0)
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "SCFS Courses", cex = 2)
-wordcloud(wc.labs, wc.scfs.courses, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+wordcloud(wc.labs, wc.scfs.courses, min.freq = 1, random.order = F, 
+          scale = c(2, 0.1), rot.per = 0)
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "CTAHR Program", cex = 2)
-wordcloud(wc.labs, wc.ctahr.program, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+wordcloud(wc.labs, wc.ctahr.program, min.freq = 1, random.order = F, 
+          scale = c(2, 0.1), rot.per = 0)
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "CTAHR Courses", cex = 2)
-wordcloud(wc.labs, wc.ctahr.courses, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+wordcloud(wc.labs, wc.ctahr.courses, min.freq = 1, random.order = F, 
+          scale = c(2, 0.1), rot.per = 0)
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "USP Program", cex = 2)
-wordcloud(wc.labs, wc.usp.program, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+wordcloud(wc.labs, wc.usp.program, min.freq = 1, random.order = F, 
+          scale = c(2, 0.1), rot.per = 0)
 
 layout(matrix(c(1, 2), nrow=2), heights=c(1, 4))
 par(mar=rep(0, 4))
 plot.new()
 text(x=0.5, y=0.5, "USP Courses", cex = 2)
-wordcloud(wc.labs, wc.usp.courses, min.freq = 1, random.order = F, scale = c(1, 0.1), rot.per = 0)
+wordcloud(wc.labs, wc.usp.courses, min.freq = 1, random.order = F, 
+          scale = c(2, 0.1), rot.per = 0)
 
 
 ```
 
-```{r result_heatmap}
 
-heatmap(abs(hm.align - max(hm.align)), Colv = NA, Rowv = NA, col = terrain.colors(256))
+```{r results_similarity, fig.dim = c(8, 8)}
+
+biplot(kwa.pc, cex = 0.75)
+biplot(kwa.kw.pc, cex = 0.75)
 
 ```

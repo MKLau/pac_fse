@@ -1,0 +1,66 @@
+USP Course Descriptions
+
+AG111 Introduction to Agricultural Economics (3)
+ This course is an introduction to basic economic ideas within an agricultural context. Topics include agricultural production resources, marginal analysis, input combinations, product interrelationship, cost concepts, economics of scales, and type of agricultural markets.
+AG124 Fundamentals of Soil Science (3)
+ This course introduces students to the basic knowledge of soil formation, the physical, chemical and biological properties of soil, soil fertility and fertilizers, soil survey and classification, soil erosion and soil management in relation to crop production.
+AG134 Agricultural Mechanisation (3)
+ The course gives the student a basic understanding of the internal combustion engine and its maintenance. It exposes students to a range of machines and equipment available for use in agriculture and provides some hands-on training in their operations and maintenance with special emphasis on tractors and some cultivation implements.
+AG164 Introductory Agricultural Biology (3)
+ This course introduces students to basic plant biology relevant to crop production. Topics include basic concepts of botany, anatomy, morphology, physiology, taxonomy, ecology, cell biology, genetics and plant breeding, and tropical environment and effects of climatic factors on crop growth and development in the South Pacific.
+AG165 Field & Plantation Crop Production (3)
+ This course provides detailed studies of production aspects of the most important field, plantation, and horticulture crops in the South Pacific region. Each crop is assessed for its place, economic significance and potential in the region and possible improvements in production and quality.
+AG172 Introduction to Animal Science (3)
+ This course provides students with basic knowledge of the domestication and contribution of farm animals to man, their adaptation (anatomy and physiology) and routine management practices. The course emphasizes the application of these concepts to real farm situations.
+AG211 Agricultural Development (3)
+ The course examines the major problems of agricultural development confronting tropical countries, especially in the South Pacific. It takes an interdisciplinary approach to natural, human and technological resource management, institutional effects, markets, infrastructure, aid, and trade.
+AG212 Farm Management (3)
+ This course integrates agricultural economics with technical husbandry skills and puts them into a management and planning framework using data and experiences from Pacific farmers.
+AG213 Agricultural Statistics (3)
+ This course introduces students to statistical methods in agricultural data analysis, including hypothesis testing, experimental designs, and variable relationships.
+AG221 Soil Fertility & Plant Nutrition (3)
+ This course provides knowledge of soil fertility parameters affecting crop growth and teaches practices to maintain and improve land productivity in the South Pacific.
+AG266 Horticultural Crops Production (3)
+ This course covers land selection, propagation, nursery management, cropping systems, and production techniques for vegetables and ornamental crops in the South Pacific.
+AG268 Pathogens & Pests of Crops (3)
+ This course introduces organisms causing plant diseases and damage, emphasizing their identification, biology, and the damage they cause, forming a foundation for crop protection studies.
+AG273 Monogastric Livestock Production (3)
+ This course covers pig and poultry production systems, including breeds, housing, feeding, health care, product quality, and industry status in the South Pacific.
+AG311 Agricultural Project Management (3)
+ This course covers agricultural project appraisal, planning, financing, monitoring, and evaluation, with emphasis on decision-making tools and management in South Pacific settings.
+AG312 Agricultural Marketing & Supply Chains (3)
+ This course provides tools to analyze agricultural marketing and supply chains, focusing on Pacific Island contexts, regulations, consumer protection, and food safety standards.
+AG314 Agribusiness Finance & Risk Management (3)
+ This course covers financial decision-making tools for agribusinesses, including investment appraisal, financial statements, risk management frameworks, and asset valuation.
+AG351 Agricultural Extension (3)
+ This course covers planning and communication methods for agricultural extension, considering sociocultural factors. Students implement an extension program in a rural community.
+AG363 Pest & Disease Management (3)
+ This course integrates pest and disease management with crop husbandry, emphasizing biological and cultural control within integrated management strategies.
+AG364 Sustainable Agricultural Production (3)
+ This course explores the interface of climate change and agriculture and teaches techniques for sustainable management of resources in diverse Pacific farming systems.
+AG366 Crop Physiology & Breeding (3)
+ This course covers tropical crop physiology and plant breeding, including development control, canopy structure, dry matter production, breeding schemes, and genetic resource conservation.
+AG372 Animal Genetics & Breeding (3)
+ This course covers genetics and breeding in livestock, including gene actions, variation, selection, breeding systems, and reproductive technologies.
+AG373 Ruminant Livestock Production (3)
+ This course covers ruminant farming systems in the Pacific, including breeds, nutrition, pasture management, diseases, and product value.
+AG383 Research Project Management Skills (3)
+ This course teaches agricultural research methods and project management. Students conduct field research, analyze data, and report findings.
+AG401 Experimental Design (3)
+ No detailed course description available.
+AG411 Production & Managerial Economics (3)
+ This course teaches applied economic techniques for farm production analysis, including decision theory, cost functions, and efficiency under uncertainty.
+AG412 Advanced Agricultural Marketing (3)
+ This course focuses on managing agricultural supply chains and marketing strategies for sustainability and competitiveness, including food safety systems like HACCP.
+AG415 Agricultural & Rural Development Policy (3)
+ This course analyzes agricultural and rural development policies, focusing on developing countries and Pacific Island contexts across marketing, finance, land reform, and climate change.
+AG422 Advanced Soil Fertility & Plant Nutrition (3)
+ This course examines plant nutrients, soil organic matter, and fertility evaluation methods for fertilizer recommendations and crop nutrition.
+AG461 Advanced Crop Physiology (3)
+ This course analyzes physiological crop processes affecting yield, including light interception, photosynthesis, and dry matter partitioning.
+AG464 Advanced Pest & Disease Management (3)
+ This course presents advanced pest and disease management strategies, including IPM, monitoring techniques, and sustainability in agriculture and public health.
+AG465 Mixed Cropping (3)
+ This course examines yield benefits and ecological interactions in mixed cropping systems, including experimental design for plant competition studies.
+AG471 Advanced Poultry & Pig Production (3)
+ This course focuses on modern poultry and pig production practices, covering breeds, housing, nutrition, diseases, processing, and marketing in the Pacific.
